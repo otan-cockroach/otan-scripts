@@ -1,0 +1,5 @@
+Instructions:
+* roachprod create $CLUSTER
+* roachprod stage $CLUSTER cockroach
+* roachprod start $CLUSTER
+* take the public IP/address, then use `python3 ./temp_table_gen.py <ip> 10000 | tee output_10000_runs_persistent.txt'
